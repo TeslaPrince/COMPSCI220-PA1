@@ -1,14 +1,13 @@
 package PA1;
 
-import java.lang.*;
 
 public class Stack {
 	char[] stackArray;
-	int maxStackSize;
-	int topOfStack = maxStackSize - maxStackSize - 1;
+	int maxStackSize, topOfStack; 
 	public Stack(int maxStackSize){
 		maxStackSize = this.maxStackSize;
 		stackArray= new char[maxStackSize];
+		topOfStack = maxStackSize - maxStackSize - 1;
 	}
 	void push(char val) {
 		if (topOfStack == maxStackSize - 1) {
