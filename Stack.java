@@ -38,7 +38,7 @@ public class Stack {
 			return stackArray[topOfStack];
 		}
 	}
-	int getSize() {
+	int size() {
 		return (topOfStack +1);
 	}
 	public String toString() {
